@@ -1,32 +1,30 @@
-class Restaurant:
-    def __init__(self, restaurant_name, cuisine_name, first_name, last_name, phoneNumber, locate, code):
-        self.code = code
-        self.locate = locate
-        self.phoneNumber = phoneNumber
-        self.restaurant_name = restaurant_name
-        self.cuisine_name = cuisine_name
-        self.first_name = first_name
-        self.last_name = last_name
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.odometer_reader = 50
 
-    def describe_restaurant(self):
-        print(f'Добрый день вы попали в {self.cuisine_name} кухню в ресторан под названием {self.restaurant_name}')
+    def update_odometr(self, milies):
+        if self.odometer_reader <= milies:
+            self.odometer_reader = milies
+        else:
+            print('Ты не можешь уменьшить пробег на своей машине')
 
-    def open_restaurant(self):
-        print('Наш ресторан работает с 9 до 10')
+    def increment_odometr(self, miles):
+        if miles > 0:
+            self.odometer_reader += miles
+        else:
+            print('вы не можете добавлять отрицательные мили')
+    def get_descriptive_name(self):
+        lond_name = f'{self.brand} {self.model} {self.year}'
+        return lond_name
 
-    def usersInf(self):
-        print(f'Добрый день {self.first_name} {self.last_name}')
+    def read_odometer(self):
+        print(f'Эта мвшина проехала {self.odometer_reader} милей')
 
-    def greetUser(self):
-        print(f'''ваш номер{self.phoneNumber}
-Ваша локация{self.locate}
-ваш код{self.code}
-        ''')
+myCar = Car('Toyota', 'Prado', 2022)
+myCar.update_odometr(100)
+myCar.increment_odometr(-10)
 
-
-
-tastyAndTochka = Restaurant('Вкусно и точка', 'фаст фуд', 'Максим', "Еловских", 79147989186, 'Vladivostok', 546)
-
-tastyAndTochka.greetUser()
-
-
+myCar.read_odometer()
