@@ -21,3 +21,19 @@ tastyAndTochka = Restaurant('Вкусно и точка', 'фаст фуд', 'М
 tastyAndTochka.greetUser()
 
 3) все что хранится в self - атрибуты
+
+4) наследственность
+class ElectricCar(Car):
+    def __init__(self, brand, model, year):
+        // то что используется в классе car
+        super().__init__(brand, model, year)
+        // то что используется в классе electricCar
+        self.battary_size = 75
+
+    def describe_battery(self):
+        print(f'состояние вышего аккумулятора находится на значении {self.battary_size}')
+
+
+
+myTesla = ElectricCar('Tesla', 'Modek X', 1023)
+myTesla.describe_battery()

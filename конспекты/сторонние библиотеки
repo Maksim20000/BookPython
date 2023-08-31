@@ -1,0 +1,22 @@
+1) random
+        randint
+        print(random.randint(1,6))
+        любое число от 1 до 6
+
+        choice
+        colors = ["red", "green", "blue", "yellow", "orange"]
+        print(random.choice(colors))
+
+2) datatime
+    date — хранит дату
+    time — хранит время
+    datetime — хранит дату и время
+
+    сколько сейчас времени
+    print(datetime.datetime.now())
+
+    только день
+    print(datetime.date.today())
+
+    только время
+    print(datetime.datetime.now().time())

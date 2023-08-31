@@ -1,6 +1,8 @@
+"""В этом файле представлен класс с рестараном"""
+
 class Restaurant:
-    def __init__(self):
-        self.number_served = 0
+    def __init__(self, number_served):
+        self.number_served = number_served
 
     def get_number_served(self):
         print(f'{self.number_served} посетителей уже обслужены')
@@ -10,12 +12,4 @@ class Restaurant:
 
     def increment_served(self, served_visitors):
         self.number_served += served_visitors
-
-
-myRestaurant = Restaurant()
-myRestaurant.set_nuber_served(10)
-myRestaurant.increment_served(4)
-
-myRestaurant.get_number_served()
-
 
