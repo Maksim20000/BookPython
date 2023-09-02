@@ -8,6 +8,7 @@ print(contents.rstrip()) - удаляет последнюю строку
 2)  replace - метод который помогает нам заменять в файле одно слово на другое
 adv_list = adv_list.replace('Python', "React")
 
+
 print(adv_list)
 
 2) базовая структура файлы записи
