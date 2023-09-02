@@ -1,6 +1,6 @@
 '''В этом файле я перебираю все цифры числа пи и проверяю совпала ли моя дата рождения с ним'''
 
-with open('pi_digits') as file_object:
+with open('../read_pi/pi_digits') as file_object:
     lines = file_object.read()
 
 pi = ''
