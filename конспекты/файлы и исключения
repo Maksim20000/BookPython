@@ -1,0 +1,24 @@
+1)  базовая структура для читания файла
+with open('pi_digits') as file_object:
+    contents = file_object.read()
+print(contents)
+лии
+print(contents.rstrip()) - удаляет последнюю строку
+
+2)  replace - метод который помогает нам заменять в файле одно слово на другое
+adv_list = adv_list.replace('Python', "React")
+
+print(adv_list)
+
+2) базовая структура файлы записи
+with open('message', 'w') as file_object:
+    file_object.write('l love programming')
+параметр w помогает нам стирать и заново записывать в файл текст который мы хотим ввести
+
+параметры
+    1) 'r' - чтения
+    2) 'w' - удаляет и вставляет текст
+    3) 'a' - присоединение
+    4) 'r+' - и чтения и присоединение
+
+3) чтобы перейти на следующую строку нужно написать \n
