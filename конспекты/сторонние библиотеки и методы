@@ -20,3 +20,8 @@
 
     только время
     print(datetime.datetime.now().time())
+
+3) метод count
+line = 'Row, row, row'
+
+print(line.lower().count('row'))
